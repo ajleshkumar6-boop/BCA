@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My HTML Learning Page</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #000000, #1a1a2e, #16213e);
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 10px;
+      background: rgba(0, 255, 255, 0.1);
+      border-bottom: 2px solid #00ffff;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(30px);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #00ffff;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    
+    .scroll-banner {
+      white-space: nowrap;
+      overflow: hidden;
+      border-top: 2px solid #ff0066;
+      border-bottom: 2px solid #ff0066;
+      background: #ff0066;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 8px 0;
+    }
+
+    .scroll-banner span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 15s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffcc00;
+      margin: 0 15px;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin: 40px 0;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #00ffff;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffff33;
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      color: #00ffcc;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    a.top-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #ffcc00;
+      font-weight: bold;
+    }
+
+    a.top-link:hover {
+      color: #00ffff;
+    }
+
+    
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border: 3px solid #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffff88;
+    }
+
+
+    ol li {
+      margin-bottom: 10px;
+    }
+
+    ul li {
+      margin-left: 20px;
+      list-style: square;
+    }
+
+   
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border-top: 1px solid #00ffff;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1> My HTML Learning Project </h1>
+    <nav>
+      <a href="#formatting">Formatting</a>
+      <a href="#fonts">Fonts & Images</a>
+      <a href="#scrolling">Scrolling Text</a>
+      <a href="#tags">Other Tags</a>
+      <a href="#list">Lists</a>
+    </nav>
+  </header>
+
+  <div class="scroll-banner">
+    <span> HTML is Fun! | Learn by Doing | Create Cool Web Pages | </span>
+  </div>
+
+  <main>
+
+   
+    <section id="formatting">
+      <h2> Text Formatting Examples</h2>
+      <p><b>Bold:</b> <b>This is bold text</b></p>
+      <p><i>Italic:</i> <i>This is italic text</i></p>
+      <p><u>Underline:</u> <u>This is underlined text</u></p>
+      <p>Strike Through:<s> This is Strike Through</s></p>
+      <p>Chemical Formula: H<sub>2</sub>O</p>
+      <p>Math Equation: X<sup>2</sup> + Y<sup>2</sup></p>
+
+      <a class="top-link" href="#top"> Back to Top</a>
+    </section>
+
+    
+    <section id="fonts">
+      <h2>Fonts & Images</h2>
+      <p style="font-family: Arial;">This is Arial Font</p>
+      <p style="font-family: 'Times New Roman';">This is Times New Roman Font</p>
+      <p style="font-family: Courier;">This is Courier Font</p>
+
+      <img src="hello.png" alt="Sample Image" style="float: center;" width="80px" height="80px" >
+      <div style="text-align: center;">Sample Image</div>
+      <a class="top-link" href="#top"> Back to Top</a>
+    </section>
+
+    
+    <section id="scrolling">
+      <h2>Scrolling Text </h2>
+      <div class="scroll-banner"><span>This text smoothly scrolls from right to left!</span></div>
+      <p style="text-align:center; margin-top:20px;">
+         <a href="https://www.google.com" target="_blank" style="color:#ffcc00;">Visit Google</a>
+      </p>
+
+      <a class="top-link" href="#top"> Back to Top</a>
+    </section>
+
+ 
+    <section id="tags">
+      <h2> Other HTML Tags</h2>
+      <p>Line 1<br>Line 2</p>
+      <hr>
+      <h3>Preformatted Text</h3>
+      <pre>
+HTML is simple,
+HTML is fun,
+Learn it well,
+And you'll impress everyone!
+      </pre>
+
+      <a class="top-link" href="#top"> Back to Top</a>
+    </section>
+
+    <!-- Lists -->
+    <section id="list">
+      <h2> Nested Lists Example</h2>
+      <ol>
+        <li>Fruits
+          <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+          </ul>
+        </li>
+        <li>Vehicles
+          <ul>
+            <li>Car</li>
+            <li>Bike</li>
+          </ul>
+        </li>
+        <li>Subjects
+          <ul>
+            <li>Math</li>
+            <li>Science</li>
+          </ul>
+        </li>
+      </ol>
+
+      <a class="top-link" href="#top"> Back to Top</a>
+    </section>
+
+  </main>
+
+  <footer>
+     Created by Nitin Kumar | Practice Makes Perfect 
+  </footer>
+
+</body>
+</html>
